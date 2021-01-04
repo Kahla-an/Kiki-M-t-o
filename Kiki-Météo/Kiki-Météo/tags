@@ -1,7 +1,0 @@
-____mbstate_t_defined	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^#define ____mbstate_t_defined 1$/;"	macro	line:2
-__WINT_TYPE__	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^# define __WINT_TYPE__ unsigned int$/;"	macro	line:9
-__count	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^  int __count;$/;"	member	line:15	struct:__anon2	access:public
-__wch	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^    __WINT_TYPE__ __wch;$/;"	member	line:18	union:__anon2::__anon3	access:public
-__wchb	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^    char __wchb[4];$/;"	member	line:19	union:__anon2::__anon3	access:public
-__value	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^  } __value;		\/* Value so far.  *\/$/;"	member	line:20	struct:__anon2	typeref:union:__anon2::__anon3	access:public
-__mbstate_t	/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h	/^typedef struct {   int __count;   union   {     __WINT_TYPE__ __wch;     char __wchb[4];   } __value;		\/* Value so far.  *\/ } __mbstate_t; $/;"	typedef	line:21	typeref:struct:__anon2

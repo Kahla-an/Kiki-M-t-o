@@ -1,7 +1,9 @@
 
 //express initialization
+const { request, response } = require("express")
 const express = require("express")
 const app = express()
+const URI = '/api/'
 app.use(express.json())
 
 //mysql initialization
@@ -32,7 +34,10 @@ const HOST = 'localhost'
 //------------------------------------- CRUD --------------------------------------\\
 
 //CREATE
-
+app.post('/api/create', (req, res) => {
+    console.log(req.body)
+    res.send("create ok")
+})
 
 
 

@@ -28,4 +28,6 @@ INSERT INTO releves(date_enregistrement, temperature, humidite) VALUES
     ('2021-02-05 23:08:00','29.5','0.47'),
     ('2021-02-05 23:09:00','28.3','0.62'),
     ('2021-02-05 23:10:00','29.2','0.31');
-SELECT id_sonde_fk AS "ID Sonde", date_enregistrement AS "Date Enregistrement", temperature AS "Température", humidite*100 AS "Taux d'Humidité" FROM releves;
+
+SELECT id_sonde_fk AS "ID Sonde", date_enregistrement AS "Date Enregistrement", temperature AS "Température", humidite*100 AS "Taux d'Humidité", nom_sonde AS "Nom Sonde" FROM releves INNER JOIN sondes ON releves.id_sonde_fk = sondes.id_sonde;
+

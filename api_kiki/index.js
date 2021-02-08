@@ -35,15 +35,29 @@ const HOST = 'localhost'
 //CREATE
 app.post('/api/create', (req, res) => {
     console.log(req.body)
-    res.send("create ok")
+    // db.insert(req.body)
+    // res.send(req.body)
 })
 
 //vidéo à 20 minutes 
 //READ
+app.get('/api/perso', (req, res) => {
+    db.find({}, (err, docs) => {
+        if (err) console.log(err)
 
+        res.send(docs)
+     })
+})
+//UPDATE
+app.patch('/api/perso/:id', (req, res) => {
+    db.update({ _id: req.params.id}, req.body)
+    res.send(req.body)
+})
 
-
-
+// DELETE
+app.delete('/api/perso/:id', (req, res) => {
+    db.remove({ _id: req.params.id})
+})
 
 //running server
 app.listen(PORT, () => {

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Varela', sans-serif;
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+    border: solid 1px black;
+}
+footer {
+    background-color: black;
+    color: blanchedalmond;
+    padding: 20px;
+    text-align: center;
+}

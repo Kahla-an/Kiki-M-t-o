@@ -49,7 +49,7 @@
 		{
 			$response=array(
 				'status' => 1,
-				'status_message' =>'Produit ajouté avec succès.'
+				'status_message' =>'Produit ajoutï¿½ avec succï¿½s.'
 			);
 		}
 		else

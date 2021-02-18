@@ -9,7 +9,7 @@ $psearch = $data["search"];
 
 require_once "dbconfig.php";
 
-echo $query = "Select * FROM tbl_product WHERE product_name LIKE '%".$psearch."%'";
+echo $query = "Select * FROM tbl_product WHERE product_sondes AND product_releves LIKE '%".$psearch."%'";
 
 $result = mysqli_query($conn, $query) or die ("Search Query Failed");
 
@@ -20,7 +20,7 @@ if($count > 0)
     $row = mysqli_fetch_all($result, MYSQL_ASSOC);
 
 
-echo json_encode($row);
+    echo json_encode($row);
 }
 else
 {

@@ -9,14 +9,14 @@ Acess-Control-Allow-Methods, Authorization");
 $data = json_decode(file_get_contents("php://input"), true);
  
 $pid = $data["id"];
-$pname = $data["name"];
-$pprice = $data["price"];
+$psondes = $data["sondes"];
+$preleves = $data["releves"];
  
 require_once "dbconfig.php";
  
-echo $query = "UPDATE tbl_product SET product_name= '".$pname."' ,
- product_price= '".$pprice."'
- WHERE product_id= '".$pid"'";
+echo $query = "UPDATE tbl_product SET product_sondes= '".$psondes."' ,
+                                 product_releves= '".$preleves."'
+                            WHERE product_id= '".$pid."'";
 if(mysqli_query($conn, $query) or die ("Update Query Failed"))
 {
  echo json_encode(array("message" => "Product Update Succesfully", "status" => true));

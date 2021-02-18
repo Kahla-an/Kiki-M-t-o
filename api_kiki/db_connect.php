@@ -1,8 +1,8 @@
 <?php
 	$server = "localhost";
-	$username = "root";
-	$password = "";
-	$db = "stock";
+	$username = "test";
+	$password = "mot_de_passe";
+	$db = "Kiki_meteo";
 	$conn = mysqli_connect($server, $username, $password, $db);
 
 if(!$conn){

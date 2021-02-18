@@ -1,19 +1,20 @@
 body {
     margin: 0;
     font-family: 'Varela', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    
+    background: gray;   
 }
 header ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    border: black;
 }
 header ul li {
     display: inline-block;
@@ -21,25 +22,30 @@ header ul li {
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: bold;
+    border: black
 }
 section {
-    padding: 100px;
-    border: solid 1px black;
-    position: absolute; left: 0; right: 0; top: 70;
-}
-section h1, section ul p {
-    text-align: center;
+    height: 700px;
+    width: 500px;
+
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -300px;
 }
 section2 {
-    padding: 100px;
-    border: solid 1px black;
-    position: absolute; bottom: 50; right: 0; left: 0; top: 440;
+    height: 700px;
+    width: 500px;
+
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -300px;
     text-align: center;
 }
-section3 {
-    padding: 15px;
-    border: solid 1px black;
-    position: absolute; bottom: 50; left: 0; right: 0;
+section h1, section ul p {
     text-align: center;
 }
 footer {

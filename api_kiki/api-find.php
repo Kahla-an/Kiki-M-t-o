@@ -9,7 +9,7 @@ $psearch = $data["search"];
 
 require_once "dbconfig.php";
 
-echo $query = "Select * FROM tbl_product WHERE product_name LIKE '%".$psearch."%'";
+echo $query = 'SELECT * FROM releves WHERE id_releve = '".$preleves."'';
 
 $result = mysqli_query($conn, $query) or die ("Search Query Failed");
 

@@ -1,3 +1,6 @@
-RewriteEngine On # Activer le module Rewrite
-RewriteRule ^produits/?$ produits.php [NC,L]
-RewriteRule ^[^/]+/(\d+)$ produits.php?id=$1
+<Ifmodule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+</Ifmodule>

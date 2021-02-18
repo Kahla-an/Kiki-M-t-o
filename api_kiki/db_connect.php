@@ -5,10 +5,9 @@
 	$db = "Kiki_meteo";
 	$conn = mysqli_connect($server, $username, $password, $db);
 
-if(!$conn){
+if(!$conn)
+{
 	die("Connection failded: ".mysqli_connect_error());
 }
-
-
 
 ?>

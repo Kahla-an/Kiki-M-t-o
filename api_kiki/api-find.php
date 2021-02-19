@@ -9,11 +9,7 @@ $psearch = $data["search"];
 
 require_once "dbconfig.php";
 
-<<<<<<< HEAD
 echo $query = 'SELECT * FROM releves WHERE id_releve = '".$preleves."'';
-=======
-echo $query = "Select * FROM tbl_product WHERE product_sondes AND product_releves LIKE '%".$psearch."%'";
->>>>>>> main
 
 $result = mysqli_query($conn, $query) or die ("Search Query Failed");
 
